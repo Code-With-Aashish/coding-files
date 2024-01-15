@@ -22,16 +22,36 @@ header nav {
     background-color: blue;
     height: 6vh;
     width: 100vw;
-    ;
+    text-align: center;
 }
 
 header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 50px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -ms-flex-line-pack: center;
     align-content: center;
     position: relative;
-    top: 10px;
+    top: 14px;
+}
+
+header nav ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: rgb(124, 124, 177);
+    font-weight: 750;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+header nav ul li a:hover {
+    color: #00014f;
+    background-color: #5555b3;
 }
 
 .ui {
@@ -124,27 +144,44 @@ li {
 @media only screen and (max-width: 600px) {
     section {
         padding: 10px;
-        width: 300px;
+        width: 100%;
     }
 
     header {
-        height: 100vh;
-        width: 100vw;
+        height: auto;
     }
 
     .written {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .io {
-        font-size: 30px;
+        font-size: 25px;
     }
 
     .rightsectoin img {
-        height: 300px;
+        height: auto;
+        width: 100%;
     }
 
     .ui {
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    header nav ul {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    header nav ul {
+        height: -webkit-fit-content;
+        height: -moz-fit-content;
+        height: fit-content;
+        font-size: 10px;
+        gap: 5px;
     }
 }
