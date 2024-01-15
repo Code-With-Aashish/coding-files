@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selector</title>
+    <style>
+        /* element selector */
+        div {
+            background-color: aquamarine;
+        }
+
+        /* class selector */
+        .red {
+            background-color: rgb(65, 39, 43);
+        }
+
+        .pink {
+            background-color: pink;
+        }
+
+        /* id selector */
+        #green {
+            background-color: greenyellow;
+        }
+
+        /* child selector */
+        div>p {
+            color: rgb(26, 26, 49);
+            background-color: rgb(8, 0, 255);
+        }
+
+        /* decendend selector */
+        div p {
+            color: pink;
+            background-color: black;
+        }
+
+        /* universal selector */
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: chocolate;
+        }
+
+        /* pesudo selector */
+        a:visited{
+            color: green;
+        }
+        a:active{
+           background-color: black;
+        }
+        a:hover{
+            background-color: pink;
+        }
+        p:first-child{
+            background-color: goldenrod;
+        }
+    
+    </style>
+</head>
+
+<body>
+    
+    <div class=" red">
+        Iam a div
+    </div>
+    <div class="pink">
+        Iam another div
+    </div>
+    <main>
+        <div>
+            <p>I am first</p>
+            <p>I am second</p>
+        </div>
+    </main>
+    <div id="green">
+        <p>
+            Iam another another div
+        </p>
+    </div>
+    <a href="https://www.google.com">go to google</a>
+</body>
+
+</html>

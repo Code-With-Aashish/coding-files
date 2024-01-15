@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- For simple animation we used the transition property. But for the complex animation we used the animation prooerty. -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: pink;
+            width: 80vw;
+            height: 30vh;
+        }
+
+        .box {
+            width: 10%;
+            height: 10%;
+            background-color: red;
+            color: black;
+            /* animation: ashu; */
+            /* animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-delay: 2s;
+            animation-direction: alternate-reverse; */
+            /* animation-play-state: running; */
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation: ashu 2s linear 1s 1 backwards,
+                        ashu2 3s linear infinite;
+        }
+
+        @keyframes ashu {
+            from {
+                background-color: red;
+                transform: translateX(0);
+            }
+
+            to {
+                background-color: yellowgreen;
+                transform: translateX(1200px);
+            }
+        }
+
+        @keyframes ashu2 {
+            0% {
+                transform: rotate(160deg);
+            }
+
+            25% {
+                transform: rotate(260deg);
+            }
+
+            50% {
+                transform: rotate(360deg);
+            }
+
+            75% {
+                transform: rotate(260deg);
+            }
+
+            100% {
+                transform: rotate(160deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>

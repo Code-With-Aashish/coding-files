@@ -1,0 +1,23 @@
+/* inline > id > class , AtributSelector >  ElementSelector > UniversalSelector */
+/* 1000      100        10                     1                    0                   points */
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+.cpurple {
+    color: purple;
+}
+
+.cred {
+    color: red;
+}
+
+h1.yellow {
+    color: yellow;
+}
+
+/* This is the example of Attribute selector. */
+[data-x="a"] {
+    color: blueviolet;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model In Javascript</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="hii">
+            <button type="button" onclick="hii()">click me to show a text</button>
+        </div>
+    </div>
+</body>
+<script>
+    document.title = ("hii my namei is Aashish !!");
+    console.log(document.title);
+    console.log(document.body);
+    document.body.style.backgroundColor = "yellow";
+    function hii() {
+        document.getElementById("hii").innerHTML = "This is the box";
+    }
+</script>
+
+</html>

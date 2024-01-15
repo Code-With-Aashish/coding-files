@@ -1,0 +1,20 @@
+* {
+    background-color: chartreuse;
+}
+
+.box {
+    padding: 34px;
+    border: 2px solid black; /* Inner side of box */
+    background-color: green;
+    height: 20px;
+    box-shadow: 20px 19px 5px 0px #209b42;
+}
+
+.text-shadow {
+    color: red;
+    text-shadow: 2px 2px 4px blue;
+    border: 2px solid purple;
+    outline: 2px solid black; /* outter side of box */
+    outline-offset: 9px;
+    border-radius: 50px;
+}

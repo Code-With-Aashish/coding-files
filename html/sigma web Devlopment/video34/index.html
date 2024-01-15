@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            float: left;
+        }
+
+        .cards {
+            border: 1px solid black;
+            display: flow-root;
+        }
+
+        .card {
+            border: 1px solid red;
+        }
+
+        .card:nth-child(3) {
+            background-color: aqua;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img src="tree.jpg" alt="tree image" width="250">
+        <div class="card ">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ut corrupti cumque vero nemo quo rem
+                illo harum nisi, facilis totam nam similique ab? Fuga ipsa illum deleniti veritatis rerum laudantium,
+                perferendis optio voluptates expedita aut minus obcaecati soluta sequi officia atque voluptatum quas
+                laboriosam.
+            </p>
+        </div>
+        <div class="card "> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto quasi harum aliquid aut
+            illo. Alias, nam voluptate? Doloremque, rem cumque porro molestias expedita eaque? Nisi, facilis, corporis
+            similique corrupti nemo aliquid modi recusandae unde odio saepe maxime? Beatae, quia! Porro veniam ipsum
+            dolore nemo nihil minima blanditiis corporis, aspernatur debitis cum, in molestias sequi tempore dicta culpa
+            vitae numquam labore? Architecto quisquam maiores unde et similique doloribus atque asperiores! Similique et
+            labore vero quas saepe velit, reprehenderit illum minus, harum ab dolorem eius neque ratione praesentium
+            laborum rem explicabo, asperiores nam. Cupiditate repudiandae, illum similique accusamus quas expedita amet
+            nemo architecto iusto provident iure et mollitia saepe, quasi earum dolores animi, voluptatibus velit
+            obcaecati fuga est! Temporibus porro inventore cupiditate obcaecati culpa quo, esse aspernatur magnam vitae
+            laboriosam. Fuga dolor ut amet officiis saepe distinctio, eius, rerum deserunt quae dolorum aspernatur
+            assumenda unde quibusdam quidem, voluptate est sit ea accusantium.</div>
+        <div class="card "> card 3</div>
+    </div>
+
+</body>
+
+</html>
