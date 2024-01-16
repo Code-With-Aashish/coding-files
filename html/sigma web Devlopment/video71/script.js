@@ -8,5 +8,4 @@ console.log("This is created by me")
 // container.replaceChild(div, container.querySelector(".box"));
 
 var cont = document.querySelector(".container");
-cont.insertAdjacentHTML("afterend", "<div class='created'> hii my name is Aashihs</div> ");
-cont.insertAdjacentHTML("beforeend", "<div class='created'> hii my name is Aashihs</div> ")
+cont.insertAdjacentHTML("beforeend", "<div class='created'> hii my name is Aashihs</div> ");

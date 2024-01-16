@@ -35,22 +35,25 @@
         <div id="orange" class="box">Box5</div>
     </div>
 
-
+    <p>hii ia ama paragraph . </p>
 
     <script>
+        console.log("Script.js initializing")
+        // let boxes = document.getElementsByClassName("box")
+        let boxes = document.querySelector(".container").children
 
-        console.log("hii this is the tutorial of sigma web devlopment")
-        let box1 = document.getElementById("pink").style.backgroundColor = "pink";
-        let box2 = document.getElementById("green").style.backgroundColor = "green";
-        let box3 = document.getElementById("blue").style.backgroundColor = "blue";
-        let box4 = document.getElementById("purple").style.backgroundColor = "purple";
-        let box5 = document.getElementById("orange").style.backgroundColor = "orange";
-
-        let box = document.getElementById("orange").style.color = "purple";
-        let box6 = document.getElementById("purple").style.color = "orange";
-        let box7 = document.getElementById("pink").style.color = "blue";
-        let box8 = document.getElementById("green").style.color = "yellow";
-        let box9 = document.getElementById("blue").style.color = "green";
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+        Array.from(boxes).forEach(e => {
+            e.style.backgroundColor = getRandomColor()
+            e.style.color = getRandomColor()
+        })
+        // Example: Set the background color of a paragraph element
+        document.querySelector("p").style.backgroundColor = randomColor;
 
     </script>
 </body>
