@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background-color change project</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-self: center;
+            background-color: burlywood;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-self: center;
+        }
+
+        .box button {
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 800;
+            border: none;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">
+            <button onclick="changecolor()">Click Me </button>
+        </div>
+    </div>
+
+    <script>
+        let boxes = document.querySelector(".container").children
+
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+        function changecolor() {
+            document.querySelector('.container').style.backgroundColor = getRandomColor();
+            document.querySelector("button").style.backgroundColor = getRandomColor();
+            document.querySelector("button").style.color = getRandomColor();
+        }
+    </script>
+
+
+</body>
+
+</html>
