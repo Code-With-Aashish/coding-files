@@ -1,0 +1,37 @@
+.flex {
+    display: flex;
+}
+
+.justify {
+    justify-content: center;
+}
+
+.item {
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #545353;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+    border-radius: 6px;
+
+}
+
+
+/* Add these styles to your CSS */
+.sign {
+    border: none;
+    background: none;
+    cursor: pointer;
+    outline: none;
+
+}
