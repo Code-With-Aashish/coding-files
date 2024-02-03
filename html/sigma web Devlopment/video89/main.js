@@ -1,52 +1,43 @@
 const express = require('express')
+const blog = require('./routes/blog')
+const shop = require('./routes/shop')
+
 const app = express()
 const port = 3000
 
 app.use(express.static("public"))
+app.use('/blog', blog)
+app.use('/shop', shop)
 
 app.get('/', (req, res) => {
-    res.send('Hello World!')
-    console.log('hey this is gte request');
-    // console.log(res);
-    // console.log(req);
-}).post('/', (req, res) => {
-    res.send('Hello World post!')
-    console.log("hey this is post request");
-    // console.log(res);
-    // console.log(req);
-}).put('/', (req, res) => {
-    res.send('Hello World put!')
-    console.log("hey this is put request");
-    // console.log(res);
-    // console.log(req);
+  console.log("Hey its a get request")
+  res.send('Hello World21!')
 })
-app.get('/index', (req, res) => {
-    res.sendFile("templets/index.html", { root: __dirname })
-    console.log("hey this is index");
+app.post('/', (req, res) => {
+  console.log("Hey its a post request")
+  res.send('Hello World post!')
 })
 
-app.get('/api', (req, res) => {
-    res.json({ a: 1, b: 2, c: 3, d: 4 });
+app.put('/', (req, res) => {
+  console.log("Hey its a put request")
+  res.send('Hello World put!')
 })
 
-app.get('/download', (req, res) => {
-    const filePath = 'G:/coding files/html/sigma web Devlopment/video89/test2.html';
-    res.download(filePath, (err) => {
-        if (err) {
-            console.error('Error downloading file:', err);
-            res.status(500).send('Internal Server Error');
-        } else {
-            console.log("hey, this is a download request");
-        }
-    });
-});
+app.get("/index", (req, res) => {
+  console.log("Hey its index")
+  res.sendFile('templates/index.html', { root: __dirname })
+})
 
+app.get("/api", (req, res) => {
+  res.json({ a: 1, b: 2, c: 3, d: 4, name: ["harry", "jerry"] })
+})
 
 app.listen(port, () => {
-    console.log(`Example app listening on port ${port}`)
+  console.log(`Example app listening on port ${port}`)
 })
 
 
+// Route to download test2.html
 /*
 // Define the URL endpoint where you want to send the POST request
 const url = 'https://example.com/api';
