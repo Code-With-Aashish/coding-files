@@ -20,7 +20,7 @@ app.use((req, res, next) => {
     req.ashu = " I am the best coder in the world.";
     fs.appendFileSync("logs.txt", `${Date.now()} is a ${req.method}\n`)
     console.log(`${Date.now()} is a ${req.method}`)
-    // res.send("Hacked by Middlware 1")
+    // res.send("Hacked by Middlware 1") // (res.send) is the function to send the file.
     next()
 })
 
