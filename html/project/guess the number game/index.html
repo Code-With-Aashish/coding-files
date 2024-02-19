@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess Thr Number Game by Aashihs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <div class="container">
+
+            <h1>Guess the Number Game</h1>
+            <p>We have selected a random number between 1 and 100. See if you can guess it in 10 turns or fewer.
+                We'll
+                tell
+                you
+                if your guess was too high or too low.</p>
+            <h3>Your guess count is : <span id="guessCountDisplay">0</span></h3>
+            <div class="form">
+                <label for="guessField">Pridict the Number : </label>
+                <input type="number" id="guessField" class="guessField">
+            </div>
+            <div class="form">
+                <button type="submit" value="Submit guess" class="guessSubmit btn-start">Pridict It</button>
+            </div>
+            <div id="result"></div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>

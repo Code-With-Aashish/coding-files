@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Increment & Decrement</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            height: 100vh;
+            width: 100vw;
+            background-color: rgb(107, 171, 187);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            height: 30%;
+            width: 40%;
+            background-color: rgb(81, 93, 156);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .btn {
+            padding: 20px;
+            font-size: 2rem;
+        }
+
+        .card p {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <p>The value is : <span class="incr-decr">0</span></p>
+            <div>
+                <button class="btn plus">+</button>
+                <button class="btn minus">-</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>

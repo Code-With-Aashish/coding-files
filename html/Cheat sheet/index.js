@@ -113,3 +113,4 @@
 // console.log(sum(...arr));  // [...arr] is use to open the array in a number format
 
 
+//  battery number:- +91 77589 98846
