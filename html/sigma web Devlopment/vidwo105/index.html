@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>why reactjs.</title>
+    <style>
+        .box {
+            color: red;
+            height: 121px;
+            width: 121px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">I am a box1</div>
+    <div class="box box2">I am a box2</div>
+    <div class="box box3">I am a box3</div>
+    <div class="box box4">I am a box3</div>
+</body>
+<script>
+    setTimeout(() => {
+        document.querySelector('.box1').innerHTML = 'box1';
+    }, 1000);
+    setTimeout(() => {
+        document.querySelector('.box2').innerHTML = 'box2';
+    }, 2000);
+    setTimeout(() => {
+        document.querySelector('.box3').innerHTML = 'box3';
+    }, 3000);
+    setTimeout(() => {
+        document.querySelector('.box4').innerHTML = 'box4';
+    }, 4000);
+</script>
+
+</html>
