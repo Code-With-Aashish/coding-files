@@ -1,0 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.cards {
+  width: 100vw;
+  display: flex;
+}
