@@ -1,0 +1,97 @@
+@import '../../vars.css';
+
+:root {
+    --container-bg-color: rgba(12, 12, 12, 0.6);
+    --container-border-radius: 15px;
+    --container-padding: 73px;
+    --container-margin-top: 129px;
+    --container-margin-sides: 10%;
+    --title-font-size: 35px;
+    --title-font-weight: 700;
+    --title-letter-spacing: 1.75px;
+    --aboutimg-width: 35%;
+    --aboutItems-gap: 15px;
+    --aboutItem-padding: 25px;
+    --aboutItem-font-size: 23px;
+    --media-query-size: 830px;
+}
+
+.container {
+    position: relative;
+    background-color: var(--container-bg-color);
+    border-radius: var(--container-border-radius);
+    padding: var(--container-padding);
+    margin: var(--container-margin-top) var(--container-margin-sides);
+    z-index: 1;
+}
+
+.title {
+    color: var(--color-text);
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    letter-spacing: var(--title-letter-spacing);
+    text-transform: uppercase;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.aboutimg {
+    width: var(--aboutimg-width);
+}
+
+.aboutItems {
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: var(--aboutItems-gap);
+}
+
+.aboutItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: var(--container-border-radius);
+    list-style: none;
+    padding: var(--aboutItem-padding);
+    background-image: linear-gradient(90deg,
+            rgba(165, 215, 232, 0.42) 0%,
+            rgba(255, 255, 255, 0) 100%);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: background-size 0.4s;
+}
+
+.aboutItem:hover {
+    background-size: 100% 100%;
+}
+
+.aboutItem h3 {
+    font-size: var(--aboutItem-font-size);
+}
+
+@media screen and (max-width: var(--media-query-size)) {
+    .container {
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .aboutImage {
+        display: none;
+    }
+
+    .aboutItems {
+        margin-top: var(--aboutItem-padding);
+    }
+
+    .aboutItem {
+        padding: 0;
+    }
+}

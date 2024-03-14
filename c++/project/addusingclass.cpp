@@ -14,6 +14,7 @@ void complex::read(int x, int y)
 {
     a = x;
     b = y;
+    sum();
 }
 void complex::sum()
 {
@@ -22,7 +23,7 @@ void complex::sum()
 void complex::print()
 {
     cout << "The sum of two number is: " << c << endl;
-}
+};
 
 int main()
 {
@@ -33,7 +34,6 @@ int main()
     cin >> y;
     complex ashu;
     ashu.read(x, y);
-    ashu.sum();
     ashu.print();
     return 0;
 }
