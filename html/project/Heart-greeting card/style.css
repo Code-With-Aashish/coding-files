@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.9s all ease-in-out;
+}
+
+.heart {
+    transition: 0.9s all ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    height: 700px;
+    width: 400px;
+    flex-direction: column;
+}
+
+p {
+    display: none;
+    font-size: 3.5rem;
+}
+
+.text {
+    transition: 0.9s all ease-in-out;
+    color: pink;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+}
+
+
+.heart div {
+    margin-bottom: 30px;
+    font-size: 19px;
+}
