@@ -1,12 +1,10 @@
 const heart = document.querySelector("span")
-const btn = document.querySelector("button")
-const text = document.querySelector("p")
-const welcomeTOgreeting = document.querySelector("div")
+const greed = document.querySelector("div")
+const heart2 = document.querySelector("p")
 
 function openfunction() {
     heart.style.width = "1500px";
     heart.style.height = "800px";
-    btn.style.display = "none";
-    text.style.display = "block";
-    welcomeTOgreeting.style.display = "none"
+    greed.style.display = "none";
+    heart2.style.display = "block";
 }

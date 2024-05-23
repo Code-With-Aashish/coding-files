@@ -20,26 +20,37 @@ body {
     height: 700px;
     width: 400px;
     flex-direction: column;
+    cursor: pointer;
 }
 
 p {
     display: none;
-    font-size: 3.5rem;
 }
-
-.text {
-    transition: 0.9s all ease-in-out;
-    color: pink;
-    font-size: 25px;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    padding: 10px;
-    border-radius: 50px;
-}
-
 
 .heart div {
     margin-bottom: 30px;
-    font-size: 19px;
+    font-size: 16px;
+
+}
+
+
+.heart2 {
+    font-size: 7rem;
+    animation: ashu 1s linear 0.2s infinite alternate;
+}
+
+@keyframes ashu {
+    0% {
+        transform: scale(0.25);
+    }
+
+    50% {
+        transform: scale(0.75);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+
 }
