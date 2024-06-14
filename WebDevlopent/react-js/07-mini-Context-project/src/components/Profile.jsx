@@ -15,6 +15,7 @@ const Profile = () => {
         <>
             <h1>You are login</h1>
             <h2>Welcome {user.Username}</h2>
+            <h2> your password is : {user.password}</h2>
         </>
     )
 }
