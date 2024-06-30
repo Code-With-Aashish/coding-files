@@ -9,6 +9,7 @@ int main()
     // 1.for loop
     // 2.while loop
     // 3.do while loop
+    
     // 1. for loop in c++
 
     //    for (int i = 0; i <= 100; i++)
@@ -31,11 +32,11 @@ int main()
     //     i++;
     //    }
     // infinite loop of while loop
-    while (99 <= 100)
-    {
-        cout << i << endl;
-        i++;
-    }
+    // while (99 <= 100)
+    // {
+    //     cout << i << endl;
+    //     i++;
+    // }
     // 3. do while loop
     // do
     // {
