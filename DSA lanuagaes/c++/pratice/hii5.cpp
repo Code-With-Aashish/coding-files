@@ -19,7 +19,6 @@ int sum(int a, int b)
 //     int temp = a;
 //     a = b;
 //     b = temp;
-//     // return a;
 // }
 void swapreferencevar(int *a, int *b)
 {
@@ -31,7 +30,7 @@ void swapreferencevar(int *a, int *b)
 //  This will not swap the value of a and b.
 //  void swappointer ( int a, int b) {
 //  int temp = a;
-// R a = b;
+//  a = b;
 //  b = temp;
 // }
 

@@ -14,11 +14,11 @@ void g();//---acceptable
     int main()
 {
     int num1, num2; // num1 and num2 is the actualparimeter
-    cout << "Enter the first value :";
+    cout << "Enter the first value : ";
     cin >> num1;
-    cout << "Enter the second value :";
+    cout << "Enter the second value : ";
     cin >> num2;
-    cout << "The sum is :" << sum(num1, num2); // exchang the value to calling an a function
+    cout << "The sum is : " << sum(num1, num2); // exchang the value to calling an a function
     g();
     return 0;
 }
