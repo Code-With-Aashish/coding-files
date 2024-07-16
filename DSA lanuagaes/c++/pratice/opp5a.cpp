@@ -28,7 +28,8 @@ int main()
     // ashu krish, saroj, ashish, somari;
     // krish.setId();
     // krish.getId();
-    ashu food[10]; // creating the array in classes.
+    ashu food[10]; // creating the array in classes.1
+    
     for (int i = 0; i < 10; i++)
     {
         food[i].setId();
