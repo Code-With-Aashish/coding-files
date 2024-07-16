@@ -1,3 +1,0 @@
-for creating our first app :-  npx create-expo-app appname --template blank
-
-for run :- npx expo start
